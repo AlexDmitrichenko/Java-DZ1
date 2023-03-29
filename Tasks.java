@@ -19,24 +19,21 @@
 //     }
 // }
 
-import java.util.ArrayList;
-import java.util.List;
 // Задача 2. Вывести все простые числа от 1 до 1000
-public class Tasks {
-    public static void main(String[] args) {
-        List<Integer> primes = new ArrayList<>();
-        for (int i = 1; i <= 100; i++) {
-            boolean isPrimeNumber = true;
-            for (int j = 1; j < i; j++) {
-                if (i % j == 0) {
-                    isPrimeNumber = false;
-                    break;
-                }
-            }
-            if (isPrimeNumber) {
-                primes.add(i);
-            }
-        }
-        System.out.println("Простые числа: " + primes);
-    }
-}
+// public class Tasks {
+//     public static void main(String[] args) {
+//         for (int j = 2; j <= 1000; j++) {
+//             boolean simple = false;
+
+//             for (int i = 2; i * i <= j; i++) {
+//                 simple = (j % i == 0);
+//                 if (simple) {
+//                     break;
+//                 }
+//             }
+//             if (!simple) {
+//                 System.out.print(j + " ");
+//             }
+//         }
+//     }
+// }
